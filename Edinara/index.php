@@ -44,4 +44,17 @@ while($aux <= 100){
 }
 echo "<br>";
 
+// Criando ARRAY
+$numeros = [2, 1, 5, 8, 9, 11, 2, 45];
+foreach($numeros as $numero){
+    if($numero % 2 == 0){
+        echo $numero." - é par <br>";
+    }
+}
+
+$letras = ["a", "x", "b", "c", "a", "f"];
+$letrasNaoRepetidas = array_unique($letras); // array_unique remove valores duplicados de um array
+echo "<pre>";
+var_dump($letrasNaoRepetidas); // var_dump usado para debugar o código
+echo "</pre>";
 ?>
